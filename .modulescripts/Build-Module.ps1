@@ -1,7 +1,7 @@
 param (
     #Manual params
-    [string]$Description = "This is a module with functions to help with DESCRIPTION.",
-    [array]$Tags = @("TAG1","TAG2"),
+    [string]$Description = "YouTube API integration.",
+    [array]$Tags = @("YouTube","API","Google"),
     [version]$PsVersion = "7.2",
     [string]$Author = "NorskNoobing",
 
