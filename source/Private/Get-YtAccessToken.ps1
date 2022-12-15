@@ -12,7 +12,7 @@ function Get-YtAccessToken {
         $TimeTillTokenExpiry = (Import-Clixml -Path $AccessTokenPath).expiry_date - (Get-Date)
         
         #Check if there's less than 5 minutes till the current access token expires
-        if ($TimeTillTokenExpiry -lt 5) {
+        if (($TimeTillTokenExpiry.Minutes) -lt 5) {
             New-YtAccessToken
         }
 
